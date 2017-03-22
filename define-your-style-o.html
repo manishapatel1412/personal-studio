@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Define your Style</title>
+   <!-- bootstrap css library -->
+
+<!--  <link href="ui/css/bootstrap.min.css" rel="stylesheet" type="text/css"> --> 
+
+  <link href="ui/css/bootstrap.css" rel="stylesheet" type="text/css">
+      <!-- css for fancy scrollbar -->
+
+    <link href="ui/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css">
+      <!-- css for fancy scrollbar -->
+    <link href="ui/css/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+
+    <!-- font-awesome css library -->
+
+  <link rel="stylesheet" href="ui/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="ui/css/main.css">
+
+  <!-- jQuery library -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <!--  compiled Bootstrap JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  
+    <!--  compiled JavaScript for fancy scrollbar-->
+
+  <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!--  compiled JavaScript for fancy select box-->
+
+  <script src="js/bootstrap-select.min.js"></script>
+
+    <!--  fonts -->
+    
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <script type="text/javascript">
+	function openSelectionOverview() {
+		$( "#overlay" ).width("100%");
+	}
+	function closeSelectionOverview() {
+		$( "#overlay" ).width("0%");
+	}
+	
+</script>
+
+<script type="text/javascript"> 
+$(document).ready(function () {
+	// on click event to show hide childer ul tag
+	$('label.tree-toggler').click(function () {
+		$(this).toggleClass('active');
+		$(this).parent().children('ul.tree').toggle(500);
+		// update method to reinitialize custom scorllbar
+		$( "#your-selection-scrollbar" ).mCustomScrollbar("update");
+	});
+	
+	
+	// close all parent except the first one
+	$(function(){
+		$('.tree-toggler').parent().children('ul.tree').not(':first').toggle();
+	})
+	
+	$("#your-selection-scrollbar").mCustomScrollbar({
+			axis:"yx", // vertical and horizontal scrollbar
+			theme:"your-selection-theme"
+	});
+
+	//openSelectionOverview();		
+		
+});
+ 
+</script>
+
+</head>
+
+<body>
+<header class="header">
+                <div class="navbar-brand">
+                	<a href="#"><img src="co/awh/AshtonWoods_PersonalStudio_Lockup.png" alt="AshtonWoods" ></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav right-menu navbar-right">
+                        <li class="active"><a href="#">DESIGN CENTER</a></li>
+                        <li><a href="#">HOW IT WORKS</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#"><img class="myprofile-img" src="co/awh/Profile_Photo.png" alt="My Profile" >MY PROFILE</a></li>
+                        <li><a href="#"><img src="co/awh/search-icon.png" alt="Search"></a></li>
+                    </ul>
+                </div>
+  </header>
+    <div class="container-fluid nopadding">
+			<div class="row  overlay" id="overlay">
+                <div class="left-column-overlay" id="left-column-overlay" >
+                    <div class="overlay-left">
+                        <ul class="nav nav-list overlay-menu">
+                            <li><label  class="tree-toggler nav-header active"><a href="#exteriror_selections"><small>01.</small> Exterior Selections</a></label>
+                                <ul class="nav nav-list tree">
+                                    <li><a href="#exteriror_doors">Exterior Doors</a></li>
+                                    <li><a href="#masonry">Masonry</a></li>
+                                    <li><a href="#garrage_door" >Garrage Door</a></li>
+                                </ul>
+                            </li>
+                        <li ><label class="tree-toggler nav-header "><a href="#cabinets"><small>02.</small> Cabinets</a></label>
+                            <ul class="nav nav-list tree">
+                                <li><a href="#">Exterior Doors</a></li>
+                                <li><a href="#" class="active">Masonry</a></li>
+                                <li><a href="#">Garrage Door</a></li>
+                            </ul>
+                        </li>
+                        <li><label class="tree-toggler nav-header"><a href="#"><small>03.</small> Countertops</a></label>
+                            <ul class="nav nav-list tree">
+                                <li><a href="#">Exterior Doors</a></li>
+                                <li><a href="#">Masonry</a></li>
+                            </ul>
+                        </li>
+                        <li><label class="tree-toggler nav-header"><a href="#"><small>04.</small> Wall Tile</a></label>
+                            <ul class="nav nav-list tree">
+                                <li><a href="#">Exterior Doors</a></li>
+                                <li><a href="#">Masonry</a></li>
+                            </ul>
+                        </li>
+                        <li><label class="tree-toggler nav-header"><a href="#"><small>05.</small> Window Treatments</a></label>
+                            <ul class="nav nav-list tree">
+                                <li><a href="#">Exterior Doors</a></li>
+                                <li><a href="#">Masonry</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-column-overlay" id="right-colum-overlay">
+                    <div class="row oheader" id="right-colum-overlay-header">
+                        <div class="col-lg-10 col-lg-offset-1 "> 
+                            <div class="row">
+                            	&nbsp;
+                            </div>
+                            <div class="row">
+                        		<div class="col-lg-1 nopadding" >
+                                	<i>Filter  by:</i>
+								</div>
+                                <div class="col-lg-11">
+                                    <ul> 
+                                        <li class="active"> <a href="#">All </a></li>
+                                        <li><a href="#">SELECTED OPTIONS <span>(23)</span></a></li>
+                                        <li><a href="#">UNSELECTED OPTIONS <span>(23)</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1 close-button">
+                        	<a href="javascript:closeSelectionOverview()"><span class="glyphicon glyphicon-arrow-right"></span></a>
+                        </div>
+                    </div>
+                    <div class="row omain" id="right-colum-overlay-main" >
+                        <div class="row spacer-div">
+                        	&nbsp;
+                        </div>
+                        <div class="row selection-content">
+                        	<div class="col-lg-10 col-lg-offset-1 full-height">
+                            	<div class="row scroll-box" id="your-selection-scrollbar">
+                                    <table class="col-lg-12"> 
+                                        <tr>
+                                            <td id="exteriror_selections"> 
+                                                <div class="header_major_section"><small><i>01. </i></small> Exterior Selections</div>
+                                                <div class="div_box_body">
+                                                    <table class="col-lg-12" >
+                                                            <tr id="exteriror_doors">
+                                                                <td>
+                                                                    <table class="col-lg-12">
+                                                                          <colgroup>
+                                                                            <col class="col-lg-2">
+                                                                            <col class="col-lg-5">
+                                                                            <col class="col-lg-2">
+                                                                            <col class="col-lg-1">
+                                                                            <col class="col-lg-1">
+                                                                            <col class="col-lg-1">
+                                                                          </colgroup>
+                                                                            <tr>
+                                                                                <td colspan="6" class="header_option_group" >EXTERIOR DOORS<hr></td>
+                                                                            </tr>
+                                                                            <tr class="option_info_titles">
+                                                                                <td >Code</td>
+                                                                                <td>Description</td>
+                                                                                <td></td>
+                                                                                <td>Unit Price</td>
+                                                                                <td>Qty</td>
+                                                                                <td>Net Price</td>
+                                                                            </tr>
+                                                                            <tr class="option_info">
+                                                                                <td>PC1PDEC</td>
+                                                                                <td>Due to grading conditions, this lot maybe a Deck Lot ue to grading conditions</td>
+                                                                                <td class="show_detail"> <button id="show_detail_button" class="btn btn-primary round" accesskey="s">Show Details</button>
+</td>                                                                           <td>
+																					<input class="form-control" name="existing_option_unitprice_11473" value="$350.00" size="10" type="text"><br>
+                                                                                    <span class="history_link"><a href="#">View History</a></span>
+																				</td>
+                                                                                <td><input name="existing_option_quantity_11473" value="1" type="hidden">1</td>
+                                                                                <td>$350.00</td>
+                                                                            </tr>
+                                                                            
+                                                                           	<tr><td colspan="6"></td></tr>
+                                                                           <!--
+                                                                           Warning message style use below format
+                                                                            <tr>
+                                                                                <td  colspan="6"><div class="warningmsg">Warning: Lot (86347) Last Completed Construction Stage (16) has past the Install Construction Stage (1) of Option (OPKB5005).</div></td></tr>-->
+                                                                            <tr>
+                                                                                <td colspan="6">
+                                                                                    <table class="col-lg-12">
+                                                                                    	<colgroup>
+                                                                                            <col class="col-lg-2 text-left">
+                                                                                            <col class="col-lg-3 text-left">
+                                                                                            <col class="col-lg-3 text-left">
+                                                                                            <col class="col-lg-1 text-left">
+                                                                                            <col class="col-lg-1 text-left">
+                                                                                            <col class="col-lg-1 text-left">
+                                                                                            <col class="col-lg-1 text-left">
+                                                                                      	</colgroup>
+                                                                          
+                                                                                        <tr class="item_info_titles">
+                                                                                            <td>Item</td>
+                                                                                            <td>Rule</td>
+                                                                                            <td>Value</td>
+                                                                                            <td>Room</td>
+                                                                                            <td>Unit Price</td>
+                                                                                            <td>Qty</td>
+                                                                                            <td>Net Price</td>
+                                                                                        </tr>
+                                                                                        <tr class="item_info">
+                                                                                            <td rowspan="1">BATH2CABSTD<br>
+                                                                                                <span class="item_desc">BATH 2 - Std. Cabinets</span>
+                                                                                            </td>
+                                                                                            <td>AyA - Base Cabinet (Series 1) - Std  </td>
+                                                                                            <td>
+                                                                                                    <select class="selectpicker" name="item_rule_value_name_21876_R_319__W2__1_" id="SELECT___29__21876_319_R_W2"> 
+                                                                                                        <option value="">Bowery - Givva</option>
+                                                                                                        <option value="59032">Bowery - Khiva</option>
+                                                                                                        <option value="61223">Bowery - Light Grey</option>
+                                                                                                        <option value="59031">Bowery - Lucca</option>
+                                                                                                    </select>
+
+                                                                                          	</td>
+                                                                                          	<td>W2<br><span class="room_desc">BATHROOM 2</span></td>
+                                                                                          	<td>
+                                                                                                <input class="form-control" name="existing_option_unitprice_11473" value="$350.00" size="10" type="text"><br>
+                                                                                                <span class="history_link"><a href="#">View History</a></span>
+                                                                                           	</td>
+                                                                                           	<td><input name="existing_option_quantity_11473" value="1" type="hidden">1</td>
+                                                                                			<td>$350.00</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td colspan="6">&nbsp;</td>
+                                                                                        </tr>
+                                                                                       <tr class="item_info">
+
+                                                                                        <td rowspan="2">CABINETHARDWARE<br><span class="item_desc">Std. Cabinet Hardware</span> </td>
+                                                                                        <td>Aya - Hardware Standard  </td>
+                                                                                        <td>
+                                                                                                <select class="selectpicker" name="item_rule_value_name_22657_R_341__EW__1_" id="SELECT___29__22657_341_R_EW">
+                                                                                                    <option value="">H001-03 Brushed Nickel (Handle)</option>
+                                                                                                    <option value="95542">H001-04 Pewter (Handle)</option>
+                                                                                                    <option value="8650">* See Comment</option>
+                                                                                                    <option value="99965">*To Follow</option>
+                                                                                                </select>
+                                                                                            </td>
+                                                                                            <td>EW<br><span class="room_desc">ENSUITE BATHROOM</span></td> 
+                                                                                            <td>
+                                                                                                <input class="form-control" name="existing_option_unitprice_11473" value="$350.00" size="10" type="text"><br>
+                                                                                                <span class="history_link"><a href="#">View History</a></span>
+                                                                                           	</td>
+                                                                                           	<td><input name="existing_option_quantity_11473" value="1" type="hidden">1</td>
+                                                                                			<td>$350.00</td>
+                                                                                        </tr>
+                                                                            
+                                                                                        <tr class="item_info">
+                                                                                            <td>Aya - Hardware Standard  </td>
+                                                                                            <td>
+                                                                                                <select class="selectpicker" name="item_rule_value_name_22657_R_341__KB__1_" id="SELECT___29__22657_341_R_KB">
+                                                                                                    <option value="">H001-04 Pewter</option>
+                                                                                                    <option value="8650">* See Comment</option>
+                                                                                                    <option value="99965">*To Follow</option>
+                                                                                                </select>
+                                                                                            </td>
+                                                                                            <td>KB<br><span class="room_desc">KITCHEN AND B`FAST</span></td> 
+                                                                                            <td>
+                                                                                                <input class="form-control" name="existing_option_unitprice_11473" value="$350.00" size="10" type="text"><br>
+                                                                                                <span class="history_link"><a href="#">View History</a></span>
+                                                                                           	</td>
+                                                                                           	<td><input name="existing_option_quantity_11473" value="1" type="hidden">1</td>
+                                                                                			<td>$350.00</td>
+                                                                                        </tr>
+                                                                                </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="masonry">
+                                                                <td>
+                                                                    <table class="col-lg-12">
+                                                                          <colgroup>
+                                                                            <col class="col-lg-2">
+                                                                            <col class="col-lg-5">
+                                                                            <col class="col-lg-2">
+                                                                            <col class="col-lg-1">
+                                                                            <col class="col-lg-1">
+                                                                            <col class="col-lg-1">
+                                                                          </colgroup>
+                                                                            <tr>
+                                                                                <td colspan="6" class="header_option_group">Masonary<hr></td>
+                                                                            </tr>
+                                                                            <tr class="option_info_titles">
+                                                                                <td >Code</td>
+                                                                                <td>Description</td>
+                                                                                <td></td>
+                                                                                <td>Unit Price</td>
+                                                                                <td>Qty</td>
+                                                                                <td>Net Price</td>
+                                                                            </tr>
+                                                                            <tr class="option_info">
+                                                                                <td>PC1PDEC</td>
+                                                                                <td>Due to grading conditions, this lot maybe a Deck Lot ue to grading conditions</td>
+                                                                                <td class="show_detail"> <button id="show_detail_button" class="btn btn-primary round" accesskey="s">Show Details</button>
+</td>                                                                           <td>
+																					<input class="form-control" name="existing_option_unitprice_11473" value="$350.00" size="10" type="text"><br>
+                                                                                    <span class="history_link"><a href="#">View History</a></span>
+																				</td>
+                                                                                <td><input name="existing_option_quantity_11473" value="1" type="hidden">1</td>
+                                                                                <td>$350.00</td>
+                                                                            </tr>
+                                                                            
+                                                                           	<tr><td colspan="6"></td></tr>
+                                                                           <!--
+                                                                           Warning message style use below format
+                                                                            <tr>
+                                                                                <td  colspan="6"><div class="warningmsg">Warning: Lot (86347) Last Completed Construction Stage (16) has past the Install Construction Stage (1) of Option (OPKB5005).</div></td></tr>-->
+                                                                            <tr>
+                                                                                <td colspan="6">
+                                                                                    <table class="col-lg-12">
+                                                                                    	<colgroup>
+                                                                                            <col class="col-lg-2 text-left">
+                                                                                            <col class="col-lg-3 text-left">
+                                                                                            <col class="col-lg-3 text-left">
+                                                                                            <col class="col-lg-1 text-left">
+                                                                                            <col class="col-lg-1 text-left">
+                                                                                            <col class="col-lg-1 text-left">
+                                                                                            <col class="col-lg-1 text-left">
+                                                                                      	</colgroup>
+                                                                          
+                                                                                        <tr class="item_info_titles">
+                                                                                            <td>Item</td>
+                                                                                            <td>Rule</td>
+                                                                                            <td>Value</td>
+                                                                                            <td>Room</td>
+                                                                                            <td>Unit Price</td>
+                                                                                            <td>Qty</td>
+                                                                                            <td>Net Price</td>
+                                                                                        </tr>
+                                                                                        <tr class="item_info">
+                                                                                            <td rowspan="1">BATH2CABSTD<br>
+                                                                                                <span class="item_desc">BATH 2 - Std. Cabinets</span>
+                                                                                            </td>
+                                                                                            <td>AyA - Base Cabinet (Series 1) - Std  </td>
+                                                                                            <td>
+                                                                                                    <select class="selectpicker" name="item_rule_value_name_21876_R_319__W2__1_" id="SELECT___29__21876_319_R_W2"> 
+                                                                                                        <option value="">Bowery - Givva</option>
+                                                                                                        <option value="59032">Bowery - Khiva</option>
+                                                                                                        <option value="61223">Bowery - Light Grey</option>
+                                                                                                        <option value="59031">Bowery - Lucca</option>
+                                                                                                    </select>
+
+                                                                                          	</td>
+                                                                                          	<td>W2<br><span class="room_desc">BATHROOM 2</span></td>
+                                                                                          	<td>
+                                                                                                <input class="form-control" name="existing_option_unitprice_11473" value="$350.00" size="10" type="text"><br>
+                                                                                                <span class="history_link"><a href="#">View History</a></span>
+                                                                                           	</td>
+                                                                                           	<td><input name="existing_option_quantity_11473" value="1" type="hidden">1</td>
+                                                                                			<td>$350.00</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td colspan="6">&nbsp;</td>
+                                                                                        </tr>
+                                                                                       <tr class="item_info">
+
+                                                                                        <td rowspan="2">CABINETHARDWARE<br><span class="item_desc">Std. Cabinet Hardware</span> </td>
+                                                                                        <td>Aya - Hardware Standard  </td>
+                                                                                        <td>
+                                                                                                <select class="selectpicker" name="item_rule_value_name_22657_R_341__EW__1_" id="SELECT___29__22657_341_R_EW">
+                                                                                                    <option value="">H001-03 Brushed Nickel (Handle)</option>
+                                                                                                    <option value="95542">H001-04 Pewter (Handle)</option>
+                                                                                                    <option value="8650">* See Comment</option>
+                                                                                                    <option value="99965">*To Follow</option>
+                                                                                                </select>
+                                                                                            </td>
+                                                                                            <td>EW<br><span class="room_desc">ENSUITE BATHROOM</span></td> 
+                                                                                            <td>
+                                                                                                <input class="form-control" name="existing_option_unitprice_11473" value="$350.00" size="10" type="text"><br>
+                                                                                                <span class="history_link"><a href="#">View History</a></span>
+                                                                                           	</td>
+                                                                                           	<td><input name="existing_option_quantity_11473" value="1" type="hidden">1</td>
+                                                                                			<td>$350.00</td>
+                                                                                        </tr>
+                                                                            
+                                                                                        <tr class="item_info">
+                                                                                            <td>Aya - Hardware Standard  </td>
+                                                                                            <td>
+                                                                                                <select class="selectpicker" name="item_rule_value_name_22657_R_341__KB__1_" id="SELECT___29__22657_341_R_KB">
+                                                                                                    <option value="">H001-04 Pewter</option>
+                                                                                                    <option value="8650">* See Comment</option>
+                                                                                                    <option value="99965">*To Follow</option>
+                                                                                                </select>
+                                                                                            </td>
+                                                                                            <td>KB<br><span class="room_desc">KITCHEN AND B`FAST</span></td> 
+                                                                                            <td>
+                                                                                                <input class="form-control" name="existing_option_unitprice_11473" value="$350.00" size="10" type="text"><br>
+                                                                                                <span class="history_link"><a href="#">View History</a></span>
+                                                                                           	</td>
+                                                                                           	<td><input name="existing_option_quantity_11473" value="1" type="hidden">1</td>
+                                                                                			<td>$350.00</td>
+                                                                                        </tr>
+                                                                                </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr id="garrage_door">
+                                                                <td>
+                                                                    <table class="col-lg-12">
+                                                                          <colgroup>
+                                                                            <col class="col-lg-2">
+                                                                            <col class="col-lg-5">
+                                                                            <col class="col-lg-2">
+                                                                            <col class="col-lg-1">
+                                                                            <col class="col-lg-1">
+                                                                            <col class="col-lg-1">
+                                                                          </colgroup>
+                                                                            <tr>
+                                                                                <td colspan="6" class="header_option_group" >Garrage Door<hr></td>
+                                                                            </tr>
+                                                                            <tr class="option_info_titles">
+                                                                                <td >Code</td>
+                                                                                <td>Description</td>
+                                                                                <td></td>
+                                                                                <td>Unit Price</td>
+                                                                                <td>Qty</td>
+                                                                                <td>Net Price</td>
+                                                                            </tr>
+                                                                            <tr class="option_info">
+                                                                                <td>PC1PDEC</td>
+                                                                                <td>Due to grading conditions, this lot maybe a Deck Lot ue to grading conditions</td>
+                                                                                <td class="show_detail"> <button id="show_detail_button" class="btn btn-primary round" accesskey="s">Show Details</button>
+</td>                                                                           <td>
+																					<input class="form-control" name="existing_option_unitprice_11473" value="$350.00" size="10" type="text"><br>
+                                                                                    <span class="history_link"><a href="#">View History</a></span>
+																				</td>
+                                                                                <td><input name="existing_option_quantity_11473" value="1" type="hidden">1</td>
+                                                                                <td>$350.00</td>
+                                                                            </tr>
+                                                                            
+                                                                           	<tr><td colspan="6"></td></tr>
+                                                                           <!--
+                                                                           Warning message style use below format
+                                                                            <tr>
+                                                                                <td  colspan="6"><div class="warningmsg">Warning: Lot (86347) Last Completed Construction Stage (16) has past the Install Construction Stage (1) of Option (OPKB5005).</div></td></tr>-->
+                                                                            <tr>
+                                                                                <td colspan="6">
+                                                                                    <table class="col-lg-12">
+                                                                                    	<colgroup>
+                                                                                            <col class="col-lg-2 text-left">
+                                                                                            <col class="col-lg-3 text-left">
+                                                                                            <col class="col-lg-3 text-left">
+                                                                                            <col class="col-lg-1 text-left">
+                                                                                            <col class="col-lg-1 text-left">
+                                                                                            <col class="col-lg-1 text-left">
+                                                                                            <col class="col-lg-1 text-left">
+                                                                                      	</colgroup>
+                                                                          
+                                                                                        <tr class="item_info_titles">
+                                                                                            <td>Item</td>
+                                                                                            <td>Rule</td>
+                                                                                            <td>Value</td>
+                                                                                            <td>Room</td>
+                                                                                            <td>Unit Price</td>
+                                                                                            <td>Qty</td>
+                                                                                            <td>Net Price</td>
+                                                                                        </tr>
+                                                                                        <tr class="item_info">
+                                                                                            <td rowspan="1">BATH2CABSTD<br>
+                                                                                                <span class="item_desc">BATH 2 - Std. Cabinets</span>
+                                                                                            </td>
+                                                                                            <td>AyA - Base Cabinet (Series 1) - Std  </td>
+                                                                                            <td>
+                                                                                                    <select class="selectpicker" name="item_rule_value_name_21876_R_319__W2__1_" id="SELECT___29__21876_319_R_W2"> 
+                                                                                                        <option value="">Bowery - Givva</option>
+                                                                                                        <option value="59032">Bowery - Khiva</option>
+                                                                                                        <option value="61223">Bowery - Light Grey</option>
+                                                                                                        <option value="59031">Bowery - Lucca</option>
+                                                                                                    </select>
+
+                                                                                          	</td>
+                                                                                          	<td>W2<br><span class="room_desc">BATHROOM 2</span></td>
+                                                                                          	<td>
+                                                                                                <input class="form-control" name="existing_option_unitprice_11473" value="$350.00" size="10" type="text"><br>
+                                                                                                <span class="history_link"><a href="#">View History</a></span>
+                                                                                           	</td>
+                                                                                           	<td><input name="existing_option_quantity_11473" value="1" type="hidden">1</td>
+                                                                                			<td>$350.00</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td colspan="6">&nbsp;</td>
+                                                                                        </tr>
+                                                                                       <tr class="item_info">
+
+                                                                                        <td rowspan="2">CABINETHARDWARE<br><span class="item_desc">Std. Cabinet Hardware</span> </td>
+                                                                                        <td>Aya - Hardware Standard  </td>
+                                                                                        <td>
+                                                                                                <select class="selectpicker" name="item_rule_value_name_22657_R_341__EW__1_" id="SELECT___29__22657_341_R_EW">
+                                                                                                    <option value="">H001-03 Brushed Nickel (Handle)</option>
+                                                                                                    <option value="95542">H001-04 Pewter (Handle)</option>
+                                                                                                    <option value="8650">* See Comment</option>
+                                                                                                    <option value="99965">*To Follow</option>
+                                                                                                </select>
+                                                                                            </td>
+                                                                                            <td>EW<br><span class="room_desc">ENSUITE BATHROOM</span></td> 
+                                                                                            <td>
+                                                                                                <input class="form-control" name="existing_option_unitprice_11473" value="$350.00" size="10" type="text"><br>
+                                                                                                <span class="history_link"><a href="#">View History</a></span>
+                                                                                           	</td>
+                                                                                           	<td><input name="existing_option_quantity_11473" value="1" type="hidden">1</td>
+                                                                                			<td>$350.00</td>
+                                                                                        </tr>
+                                                                            
+                                                                                        <tr class="item_info">
+                                                                                            <td>Aya - Hardware Standard  </td>
+                                                                                            <td>
+                                                                                                <select class="selectpicker" name="item_rule_value_name_22657_R_341__KB__1_" id="SELECT___29__22657_341_R_KB">
+                                                                                                    <option value="">H001-04 Pewter</option>
+                                                                                                    <option value="8650">* See Comment</option>
+                                                                                                    <option value="99965">*To Follow</option>
+                                                                                                </select>
+                                                                                            </td>
+                                                                                            <td>KB<br><span class="room_desc">KITCHEN AND B`FAST</span></td> 
+                                                                                            <td>
+                                                                                                <input class="form-control" name="existing_option_unitprice_11473" value="$350.00" size="10" type="text"><br>
+                                                                                                <span class="history_link"><a href="#">View History</a></span>
+                                                                                           	</td>
+                                                                                           	<td><input name="existing_option_quantity_11473" value="1" type="hidden">1</td>
+                                                                                			<td>$350.00</td>
+                                                                                        </tr>
+                                                                                </table>
+                                                                                </td>
+                                                                            </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+								</div>                                     
+                       		</div>
+                       	</div>
+                        <div class="row spacer-div">
+                        	&nbsp;
+                        </div>
+                    </div>
+                </div>
+			</div>
+            <div class="row content" id="main-div" >
+                <div class=" col-lg-3 left-column">
+                    <div class="left-column-top">
+                        <p class="title">
+                            <small><i> 01.</i></small><br>
+                            <strong>DEFINE <br> YOUR STYLE </strong> 
+                        </p>
+                        <p class="description">
+                            To help us define your style, please
+                            read through our questions and choose
+                            what best suits you. <br><br>
+                            From there we can get a sense of what
+                            you’re looking for, which helps our
+                            design consultants guide you along the
+                            path to designing and building your
+                            new home.  <br><br>
+                            This information can be accessed in
+                            your personal profile at any time.
+                        </p>
+                    </div>
+                    <div class="left-column-menu" >
+                    </div>
+                </div>          
+                 <div class="  col-lg-9 right-column"   >
+                    <div class="row" >
+                        <div class="col-lg-11 top-tabs"> 
+                            <ul class="nav  nav-pills nav-justified top-tabs-ul">
+                                <li class="active"><a href="#"><small><i> 01.</i></small> <span class="spacer">DEFINE YOUR STYLE</span></a></li>
+                                <li><a href="#"><small><i> 02.</i></small> <span class="spacer">INSPIRATION</span></a></li>
+                                <li><a href="#"><small ><i> 03.</i></small> <span class="spacer">YOUR SELECTIONS</span></a></li>
+                                <li><a href="#"><small><i> 04.</i></small> <span class="spacer">CATALOG</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-1 nopadding" >
+                            <div class="selection-overview-btn" >
+                                <a href="javascript:openSelectionOverview()"> 
+                                    <span class="glyphicon glyphicon-arrow-left"></span>
+                                    <span class="text">SELECTIONS <br> OVERVIEW</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="row">
+                    
+                    
+                    </div>
+                    <div class="row">
+                    	<div class="col-lg-10">
+                        
+                        </div>
+                        <div class="col-lg-2">
+                        		Compare 2 items
+                        </div>
+                    
+                    </div>
+                </div>                 
+            </div>
+		</div>
+    <footer>
+        <div class="row" >
+            <div class="col-lg-2 col-lg-offset-1"  >
+                <a href="http://www.greatgulf.com"><img src="co/awh/GG_Secondary_Logo.png" width="226" alt="Great Gulf Homes" /></a>
+                <p  class="contact-no"><strong>P</strong> 416.449.1340<br>
+                <strong>F</strong> 416.449.6438</p>
+            </div>
+            <div class="col-lg-3 col-lg-offset-1"  >
+            	<p class="copyright-text">Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2016 Great Gulf. All rights reserved.</p>
+            </div>
+            <div class="col-lg-2 col-lg-offset-1" >
+                <nav class="footer-menu">
+                    <ul>
+                        <li><a href="http://greatgulf.com/terms-conditions/">Terms of use</a></li>
+                        <li ><a href="http://greatgulf.com/privacy-policy/">Privacy</a></li>
+                        <li ><a href="http://greatgulf.com/accessibility/">Accessibility</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-2 ">
+                <p class="follow-social-media">Follow Great Gulf </p>
+                <p class="social">
+                    <a href="https://www.linkedin.com/company/great-gulf-homes" title="Find us on LinkedIn" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://www.instagram.com/greatgulf/" title="We're on Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a class="twitter-btn" href="https://twitter.com/greatgulf" title="Follow us on Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/greatgulf" title="Like us on Facebook" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

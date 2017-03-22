@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Getting Started</title>
+   <!-- bootstrap css library -->
+
+<!--  <link href="ui/css/bootstrap.min.css" rel="stylesheet" type="text/css"> --> 
+
+  <link href="ui/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <!-- font-awesome css library -->
+
+  <link rel="stylesheet" href="ui/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="ui/css/main.css">
+
+  <!-- jQuery library -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <!--  compiled Bootstrap JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  
+    <!--  compiled Bootstrap JavaScript -->
+
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+</head>
+
+<body  style="background:url(co/awh/background.jpg)  no-repeat;">
+
+<header class="header clear-background">
+       <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#" ><img src="co/awh/AshtonWoods_PersonalStudio_Lockup.png" alt="AshtonWoods"  ></a>
+            </div><!--  end navbar-header -->
+
+            <div class="collapse navbar-collapse" id="ps-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav right-menu navbar-right">
+                        <li class="active"><a href="#">DESIGN CENTER</a></li>
+                        <li><a href="#">HOW IT WORKS</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li class="dropdown no-underline" id="userMenu">
+                        
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="usr-menu"><img class="myprofile-img" src="co/awh/Profile_Photo.png" alt="My Profile" >
+                           <span class="ntf-circle"></span>
+                           <span class="num">2</span>
+                           <span class="user_name">MY PROFILE</span></a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="usr-menu" >
+                                <li role="presentation">
+                                    <a role="menuitem" class="menulink" href="<?= $local_root_path ?>/ps/logout.php">Log&nbsp;Out </a>
+                                </li>
+                            
+                           </ul>
+                        </li>
+                    </ul>
+             </div><!-- collapse -->
+             
+        </div><!-- container -->
+  </header>
+
+    
+        <div class="container-fluid nopadding">
+                <div class="row" >
+                     <div class="get-started-btn-wrapper">
+                         <a  href="./design_center.php" class="btn btn-lg round get-started-btn">GET STARTED<img src="co/awh/arrow-left.png" alt="Get Started Arrow" class="get-started-arrow"></a>
+                     </div>
+                </div>
+        </div>
+    <footer>
+        <div class="row" >
+           <div class="col-lg-2 col-lg-offset-1"  >
+                <a href="http://www.greatgulf.com"><img src="co/awh/GG_Secondary_Logo.png" width="226" height="50px" alt="Great Gulf Homes" /></a>
+            </div>
+            
+             <div class="col-lg-2 col-lg-offset-1 copyright-text"  >
+             	Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2016 Great Gulf. All rights reserved.
+            </div>
+            
+             <div class="col-lg-3 col-lg-offset-1" >
+                <nav class="footer-menu">
+                    <ul >
+                        <li ><a href="http://greatgulf.com/terms-conditions/">Terms of use</a></li>
+                        <li ><a href="http://greatgulf.com/privacy-policy/">Privacy</a></li>
+                        <li ><a href="http://greatgulf.com/accessibility/">Accessibility</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            
+             <div class="col-lg-2  follow-social-media" >
+               		<div class="text">	Follow Great Gulf</div>
+                	<div class="social-media-links-box">
+                    <a href="https://www.linkedin.com/company/great-gulf-homes" title="Find us on LinkedIn" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="https://www.instagram.com/greatgulf/" title="We're on Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a class="twitter-btn" href="https://twitter.com/greatgulf" title="Follow us on Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/greatgulf" title="Like us on Facebook" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                   </div>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
